@@ -5,7 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.iptvprovider.me'),
+  metadataBase: new URL('http://iptvproviders.eu/iptv-subscription/month'),
   title: 'Best IPTV Provider | 24,000+ Channels & VOD | IPTV Service',
   description:
     'Get the best IPTV service with over 24,000 live channels and a massive VOD library. Instant activation, HD/4K quality, and 24/7 support. Subscribe to the top IPTV provider today!',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     'sports IPTV',
     'VOD streaming',
   ],
-  authors: [{ name: 'IPTV Provider', url: 'https://www.iptvprovider.me' }],
+  authors: [{ name: 'IPTV Provider', url: 'http://iptvproviders.eu/iptv-subscription/month' }],
   creator: 'IPTV Provider',
   publisher: 'IPTV Provider',
   robots: {
@@ -43,10 +43,10 @@ export const metadata: Metadata = {
   },
   category: 'technology',
   alternates: {
-    canonical: 'https://www.iptvprovider.me',
+    canonical: 'http://iptvproviders.eu/iptv-subscription/month',
     languages: {
-      'en-US': 'https://www.iptvprovider.me',
-      'x-default': 'https://www.iptvprovider.me',
+      'en-US': 'http://iptvproviders.eu/iptv-subscription/month',
+      'x-default': 'http://iptvproviders.eu/iptv-subscription/month',
     },
   },
   verification: {
@@ -59,13 +59,13 @@ export const metadata: Metadata = {
     title: 'Best IPTV Provider | 24,000+ Channels & VOD | IPTV Service',
     description:
       'Get the best IPTV service with over 24,000 live channels and a massive VOD library. Instant activation, HD/4K quality, and 24/7 support. Subscribe to the top IPTV provider today!',
-    url: 'https://www.iptvprovider.me',
+    url: 'http://iptvproviders.eu/iptv-subscription/month',
     siteName: 'IPTV Provider',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://www.iptvprovider.me/og-image.jpg',
+        url: 'http://iptvproviders.eu/iptv-subscription/month/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'IPTV Provider - Best Streaming Service',
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
       'Get the best IPTV service with over 24,000 live channels and a massive VOD library. Instant activation, HD/4K quality, and 24/7 support. Subscribe to the top IPTV provider today!',
     images: [
       {
-        url: 'https://www.iptvprovider.me/og-image.jpg',
+        url: 'http://iptvproviders.eu/iptv-subscription/month/og-image.jpg',
         alt: 'IPTV Provider - Premium IPTV Service',
       },
     ],
@@ -107,8 +107,8 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'IPTV Provider',
-    url: 'https://www.iptvprovider.me',
-    logo: 'https://www.iptvprovider.me/logo.png',
+    url: 'http://iptvproviders.eu/iptv-subscription/month',
+    logo: 'http://iptvproviders.eu/iptv-subscription/month/logo.png',
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+1-800-555-0199',
@@ -124,14 +124,14 @@ export default function RootLayout({
   const websiteSchema = {
       "@context":"https://schema.org",
       "@type":"WebSite",
-      "url":"https://www.iptvprovider.me",
+      "url":"http://iptvproviders.eu/iptv-subscription/month",
       "name":"IPTV Provider",
       "alternateName":["IPTV Providers","best iptv provider"],
       "potentialAction":{
         "@type":"SearchAction",
         "target":{
           "@type":"EntryPoint",
-          "urlTemplate":"https://www.iptvprovider.me/search?q={search_term_string}"
+          "urlTemplate":"http://iptvproviders.eu/iptv-subscription/month/search?q={search_term_string}"
         },
         "query-input":"required name=search_term_string"
       }
