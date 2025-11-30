@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Tv, Sparkles } from 'lucide-react';
+import { Tv } from 'lucide-react';
 
 export function Header() {
   return (
@@ -14,20 +14,11 @@ export function Header() {
           <Link href="/" className="font-medium text-foreground/70 transition-colors hover:text-foreground">
             Home
           </Link>
-          <Link href="/summarize" className="font-medium text-foreground/70 transition-colors hover:text-foreground">
-            AI Summarizer
-          </Link>
         </nav>
         <div className="flex flex-1 items-center justify-end gap-2">
             <Button asChild>
                 <Link href="/#get-started">
                     Get Started
-                </Link>
-            </Button>
-            <Button variant="outline" asChild>
-                <Link href="/summarize">
-                    <Sparkles className="h-4 w-4 mr-2"/>
-                    Summarize Article
                 </Link>
             </Button>
         </div>
