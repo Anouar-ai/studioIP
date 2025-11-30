@@ -5,8 +5,9 @@ import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'StreamWise IPTV Guide',
-  description: 'Your ultimate guide to IPTV in 2025.',
+  title: '20 Best IPTV Service Providers November 2025 (Ditch Your Cable)',
+  description:
+    'This IPTV resource guide from IPTV Provider ranks the Best IPTV Services November 2025. This covers everything you need to know about live TV.',
 };
 
 export default function RootLayout({
