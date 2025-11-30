@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "iptv-interface",
+      "description": "Modern IPTV streaming interface 2025",
+      "imageUrl": "https://images.unsplash.com/photo-1757774636743-e5235c608fd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxpcHR2JTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDUyNTEzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "iptv interface"
+    },
+    {
+      "id": "multi-device-streaming",
+      "description": "IPTV multi-device streaming 2025",
+      "imageUrl": "https://images.unsplash.com/photo-1732203971761-e9d4a6f5e93f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtdWx0aS1kZXZpY2UlMjBzdHJlYW1pbmd8ZW58MHx8fHwxNzY0NTI1MTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "multi-device streaming"
+    },
+    {
+      "id": "mobile-setup",
+      "description": "IPTV setup on mobile device 2025",
+      "imageUrl": "https://images.unsplash.com/photo-1717744534180-01cb3a4d2ee6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBzZXR1cHxlbnwwfHx8fDE3NjQ1MjUxMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mobile setup"
+    }
+  ]
 }
