@@ -7,12 +7,10 @@ import {
   CheckCircle2,
   Clapperboard,
   Flame,
-  Monitor,
   Rocket,
   Smartphone,
   Sparkles,
   Timer,
-  Tv,
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ProviderTable } from '@/components/home/ProviderTable';
@@ -20,6 +18,8 @@ import { Faq } from '@/components/home/Faq';
 import { DynamicProviderLinks } from '@/components/home/DynamicProviderLinks';
 import { Suspense } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
+
+export const revalidate = 3600; // Re-generate this page every hour (ISR)
 
 const tableOfContents = [
   { href: '#what-is-iptv', text: 'What is IPTV? Understanding Internet Protocol Television' },
@@ -141,6 +141,7 @@ export default function Home() {
                   alt={iptvInterfaceImage.description}
                   width={1200}
                   height={600}
+                  priority={true}
                   data-ai-hint={iptvInterfaceImage.imageHint}
                   className="w-full"
                 />

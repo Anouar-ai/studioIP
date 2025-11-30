@@ -1,5 +1,33 @@
 import type {NextConfig} from 'next';
 
+const securityHeaders = [
+  // Prevent cross-site scripting (XSS) attacks
+  {
+    key: 'X-XSS-Protection',
+    value: '1; mode=block',
+  },
+  // Prevent clickjacking attacks
+  {
+    key: 'X-Frame-Options',
+    value: 'SAMEORIGIN',
+  },
+  // Prevent MIME-sniffing attacks
+  {
+    key: 'X-Content-Type-Options',
+    value: 'nosniff',
+  },
+  // Only send Referer header when the origin is the same
+  {
+    key: 'Referrer-Policy',
+    value: 'same-origin',
+  },
+  // Permissions-Policy to control browser features
+  {
+    key: 'Permissions-Policy',
+    value: 'camera=(), microphone=(), geolocation=()',
+  },
+];
+
 const nextConfig: NextConfig = {
   /* config options here */
   typescript: {
@@ -29,6 +57,15 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+  },
+  async headers() {
+    return [
+      {
+        // Apply these headers to all routes in your application.
+        source: '/:path*',
+        headers: securityHeaders,
+      },
+    ];
   },
 };
 
