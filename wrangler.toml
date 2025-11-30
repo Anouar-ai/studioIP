@@ -1,15 +1,4 @@
 name = "streamwise-iptv-guide"
-main = ".open-next/server-function/index.js"
-compatibility_date = "2025-11-30"
-
-[site]
-bucket = ".open-next/assets"
-
-[[rules]]
-type = "ESModule"
-globs = ["_next/static/chunks/wasm_*.wasm"]
-
-[[rules]]
-type = "Data"
-globs = ["_next/static/chunks/wasm_*.wasm"]
-fallthrough = true
+compatibility_date = "2024-09-23" # Use a recent date
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
